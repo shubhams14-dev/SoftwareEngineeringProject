@@ -2,4 +2,4 @@ Alex LaPointe - allapoin@iu.edu
 
 Charles Carroll - chajcarr@iu.edu
 
-Juncun Zhu  - zhujunc@iu.edi
+Juncun Zhu  - zhujunc@iu.edu
