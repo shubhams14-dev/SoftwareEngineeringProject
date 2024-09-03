@@ -1,12 +1,34 @@
-Name
+Name 
+* Juncun Zhu
+  
 Contact Info
-Experience ( same categories as for team )
+* 812-318-6173
+  
+Experience ( same categories as for team ) 
+* Java, Python, HTML/CSS, Javascript, Swift
+
 Class year, e.g. sophomore, junior, etc
+* junior
+  
 Career Interests
+* game develop
+  
 Personal Interests or hobbies
+* play video game
+  
 A movie or book the member would recommend
+* Movie: The Matrix
+
 Member's most impactful weakness
+* May feel tired during long-term projects
+
 Member's Biggest strength
+* Excellent problem-solving skills
+
+
+
+
+
 
 Team Name- 
 * Team 9
@@ -33,6 +55,7 @@ Team Communication Mechanism-
 * We will contact each other over WhatsApp
 * Per assignment all group members will be assigned an equal portion of the work.
 * The team will store information about the team on WhatsApp and the project on Github and WhatsApp.
+  
 Team Decision Proecess-
 * We will go by majority vote. So, in our 5 person group the side with 3 people will win over the side with 2. The vote will happen live on zoom and will be recorded with zoom's recording feature.
 * An external party can communicate with the team via email.
