@@ -9,20 +9,24 @@ Member's most impactful weakness
 Member's Biggest strength
 
 Team Name- 
-* Team 9 
+* Team 9
+
 Team Goal-
-* To complete all assigned projects to the best of our ability. 
+* To complete all assigned projects to the best of our ability.
+
 Team Members-
 * Charles Carroll, Darshan Kiran Ugale, Shubham Sandip Salunke, Alex LaPointe, Juncun Zhu
+
 Team Experience-
 * Java, Python, HTML/CSS, Javascript, Swift, Kotlin, SQL
 * React, VSCode, Intellij, PyCharm, XCode, Android Studio, PgAdmin
+
 Projects-
 * GradMeet is an IOS Social Mobile Application that allows for social grouping and interaction amongst users.
 * Online multiplayer casino game iOS app.
 * Designed an android application that helps end user/ driver to get information of the surrounding vehicles as well as stay alerted with the help of IOT based prototype
 * Developed a real-time dashboard for a product-based company, enabling seamless data sharing across departments, predictive analytics for project completion, and enhanced decision-making.
-* 
+
 Team Communication Mechanism-
 * We will meet weekly on Tuedays via Zoom at 4:30 PM as a standard time, but it will change based on assignment requirements.  
 * We will share information over WhatsApp, OneDrive, and zoom.  
