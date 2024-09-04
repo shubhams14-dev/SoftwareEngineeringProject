@@ -1,4 +1,3 @@
-dugale-assignment-1
 Name : Darshan Kiran Ugale.
 Contact Info : 930-333-5092.
 Experience ( same categories as for team ) : Java, Python, HTML/CSS, Javascript, Swift.
@@ -9,16 +8,6 @@ A movie or book the member would recommend : Movie I would recommend - Inception
 Member's most impactful weakness : Procrastination.
 Member's Biggest strength : Determination in solving problems.
 Team Name : Team Nine.
-
-Name
-Contact Info
-Experience ( same categories as for team )
-Class year, e.g. sophomore, junior, etc
-Career Interests
-Personal Interests or hobbies
-A movie or book the member would recommend
-Member's most impactful weakness
-Member's Biggest strength
 
 Team Name- 
 * Team 9
