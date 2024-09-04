@@ -1,3 +1,13 @@
+Name - Charles Carroll
+Contact Info - chajcarr@iu.edu  -- 773-782-0064
+Experience ( same categories as for team ) -- Languages: Java, JavaScript, Python, Swift, HTML/CSS, SQL -- Technologies: XCode, IntelliJ, React
+Class year: Junior
+Career Interests: Front-end software creation
+Personal Interests or hobbies: Biking, soccer, Chicago sports, chess, boats
+A movie or book the member would recommend: Ten Equations that Rule the World
+Member's most impactful weakness: Trying to keep track of complex data structures
+Member's Biggest strength: Laying out all aspects and problems needed to complete a project 
+
 Name - Alex LaPointe
 Contact Info - 3175189749
 Experience ( same categories as for team ) - Java, SQL, Python, HTML/CSS, Swift, Javascript
