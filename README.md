@@ -25,10 +25,45 @@ Member's most impactful weakness
 Member's Biggest strength
 * Excellent problem-solving skills
 
+Name - Charles Carroll
+Contact Info - chajcarr@iu.edu  -- 773-782-0064
+Experience ( same categories as for team ) -- Languages: Java, JavaScript, Python, Swift, HTML/CSS, SQL -- Technologies: XCode, IntelliJ, React
+Class year: Junior
+Career Interests: Front-end software creation
+Personal Interests or hobbies: Biking, soccer, Chicago sports, chess, boats
+A movie or book the member would recommend: Ten Equations that Rule the World
+Member's most impactful weakness: Trying to keep track of complex data structures
+Member's Biggest strength: Laying out all aspects and problems needed to complete a project 
 
+Name - Alex LaPointe
+Contact Info - 3175189749
+Experience ( same categories as for team ) - Java, SQL, Python, HTML/CSS, Swift, Javascript
+Class year, e.g. sophomore, junior, etc - Senior
+Career Interests - Software Engineering
+Personal Interests or hobbies - Hanging out with friends, Watching Football, NCAA 25
+A movie or book the member would recommend - Step Brothers 
+Member's most impactful weakness - I can be spontaneous   
+Member's Biggest strength - Good Communicator
 
+Name : Shubham Sandip Salunke.
+Contact Info : 9309044766.
+Experience ( same categories as for team ) : Java, Python, HTML/CSS, Javascript, SQL, React, VSCode.
+Class year, e.g. sophomore, junior, etc : junior.
+Career Interests : Software Developer.
+Personal Interests or hobbies : Playing Chess and Football.
+A movie or book the member would recommend : Power of your subconscious mind. 
+Member's most impactful weakness : Procrastinating things.
+Member's Biggest strength : Calm and composed.
 
-
+Name : Darshan Kiran Ugale.
+Contact Info : 930-333-5092.
+Experience ( same categories as for team ) : Java, Python, HTML/CSS, Javascript, Swift.
+Class year : First-Year Graduate Student.
+Career Interests : Software Developer.
+Personal Interests or hobbies : Playing Video Games, Travelling, Music etc.
+A movie or book the member would recommend : Movie I would recommend - Inception.
+Member's most impactful weakness : Procrastination.
+Member's Biggest strength : Determination in solving problems.
 
 Team Name- 
 * Team 9
@@ -59,5 +94,4 @@ Team Communication Mechanism-
 Team Decision Proecess-
 * We will go by majority vote. So, in our 5 person group the side with 3 people will win over the side with 2. The vote will happen live on zoom and will be recorded with zoom's recording feature.
 * An external party can communicate with the team via email.
-
 
