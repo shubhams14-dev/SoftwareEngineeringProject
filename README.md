@@ -1,12 +1,12 @@
-Name
-Contact Info
-Experience ( same categories as for team )
-Class year, e.g. sophomore, junior, etc
-Career Interests
-Personal Interests or hobbies
-A movie or book the member would recommend
-Member's most impactful weakness
-Member's Biggest strength
+Name - Alex LaPointe
+Contact Info - 3175189749
+Experience ( same categories as for team ) - Java, SQL, Python, HTML/CSS, Swift, Javascript
+Class year, e.g. sophomore, junior, etc - Senior
+Career Interests - Software Engineering
+Personal Interests or hobbies - Hanging out with friends, Watching Football, NCAA 25
+A movie or book the member would recommend - Step Brothers 
+Member's most impactful weakness - I can be spontaneous   
+Member's Biggest strength - Good Communicator
 
 Team Name- 
 * Team 9
