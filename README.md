@@ -1,4 +1,3 @@
-<<<<<< ssalunke-assignment-1
 Name : Shubham Sandip Salunke.
 Contact Info : 9309044766.
 Experience ( same categories as for team ) : Java, Python, HTML/CSS, Javascript, SQL, React, VSCode.
@@ -9,16 +8,6 @@ A movie or book the member would recommend : Power of your subconscious mind.
 Member's most impactful weakness : Procrastinating things.
 Member's Biggest strength : Calm and composed.
 Team Goal: To complete all projects productively.
-======
-Name
-Contact Info
-Experience ( same categories as for team )
-Class year, e.g. sophomore, junior, etc
-Career Interests
-Personal Interests or hobbies
-A movie or book the member would recommend
-Member's most impactful weakness
-Member's Biggest strength
 
 Team Name- 
 * Team 9
@@ -49,5 +38,3 @@ Team Decision Proecess-
 * We will go by majority vote. So, in our 5 person group the side with 3 people will win over the side with 2. The vote will happen live on zoom and will be recorded with zoom's recording feature.
 * An external party can communicate with the team via email.
 
-
->>>>> assignment1
