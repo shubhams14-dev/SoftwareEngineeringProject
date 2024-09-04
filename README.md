@@ -7,4 +7,4 @@ Personal Interests or hobbies : Playing Chess and Football.
 A movie or book the member would recommend : Power of your subconscious mind. 
 Member's most impactful weakness : Procrastinating things.
 Member's Biggest strength : Calm and composed.
-Team Goal: What is the collective goal for the team?
+Team Goal: To complete all projects productively.
