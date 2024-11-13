@@ -9,6 +9,7 @@ instance/
 .coverage
 htmlcov/
 
+node_modules/
 dist/
 build/
 *.egg-info/
