@@ -58,7 +58,21 @@ def test_create(client, auth, app):
         count = db.execute('SELECT COUNT(id) FROM post').fetchone()[0]
         assert count == 2
 
+def test_create_blog_post(client, auth):
+    auth.login()
+    response = client.post('/blog/create', data={
+        'title': 'New Blog',
+        'body': 'This is the content of the new blog.'
+    })
+    assert response.status_code == 200
+    assert b'New Blog' in response.data
 
+
+def test_view_nonexistent_blog(client):
+    response = client.get('/blog/999')  
+    assert response.status_code == 404
+    assert b'Blog not found' in response.data
+    
 def test_update(client, auth, app):
     auth.login()
     assert client.get('/1/update').status_code == 200
