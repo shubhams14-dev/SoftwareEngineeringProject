@@ -17,6 +17,7 @@ CREATE TABLE joke (
   title TEXT NOT NULL,
   body TEXT NOT NULL,
   rating INTEGER DEFAULT 0,
+  times_rated INTEGER DEFAULT 0,
   FOREIGN KEY (author_id) REFERENCES user (id)
 );
 

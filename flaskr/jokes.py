@@ -17,8 +17,8 @@ def hello():
 def my_jokes():
     db = get_db()
     jokes = db.execute(
-        'SELECT p.id, title, rating, times_rated, created, author_id, nickname'
-        ' FROM joke p JOIN user u ON p.author_id = u.id'
+        'SELECT j.id, title, rating, times_rated, created, author_id, nickname'
+        ' FROM joke j JOIN user u ON j.author_id = u.id'
         ' WHERE u.id = ?'
         ' ORDER BY created DESC',
         (g.user['id'],)

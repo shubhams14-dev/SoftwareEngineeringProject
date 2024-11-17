@@ -13,7 +13,11 @@
       <header>
         <div>
           <h1><a class="action" href="{{ url_for('jokes.update_joke', id=joke['id']) }}">{{ joke['title'] }}</a></h1>
-          <div class="about">by {{ joke['nickname'] }} on {{ joke['created'].strftime('%Y-%m-%d') }}</div>
+          {% if joke['times_rated'] == 0 %}
+          <div class="about">Average Rating: 0</div>
+          {% else %}
+          <div class="about">Average Rating: {{ joke['rating'] / joke['times_rated'] }}</div>
+          {% endif %}
         </div>
     </article>
     {% if not loop.last %}
