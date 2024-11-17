@@ -13,11 +13,11 @@ def test_index(client, auth):
     assert b'test title' in response.data
     assert b'by test on 2018-01-01' in response.data
     assert b'test\nbody' in response.data
-    assert b'href="/1/update"' in response.data
+    assert b'href="/1/update_joke"' in response.data
 
 @pytest.mark.parametrize('path', (
-    '/create',
-    '/1/update',
+    '/leave_a_joke',
+    '/1/update_joke',
     '/1/delete',
 ))
 def test_login_required(client, path):
@@ -34,14 +34,14 @@ def test_author_required(app, client, auth):
 
     auth.login()
     # current user can't modify other user's post
-    assert client.post('/1/update').status_code == 403
+    assert client.post('/1/update_joke').status_code == 403
     assert client.post('/1/delete').status_code == 403
     # current user doesn't see edit link
-    assert b'href="/1/update"' not in client.get('/').data
+    assert b'href="/1/update_joke"' not in client.get('/').data
 
 
 @pytest.mark.parametrize('path', (
-    '/2/update',
+    '/2/update_joke',
     '/2/delete',
 ))
 def test_exists_required(client, auth, path):
@@ -50,29 +50,29 @@ def test_exists_required(client, auth, path):
 
 def test_create(client, auth, app):
     auth.login()
-    assert client.get('/create').status_code == 200
-    client.post('/create', data={'title': 'created', 'body': ''})
+    assert client.get('/leave_a_joke').status_code == 200
+    client.post('/leave_a_joke', data={'title': 'leave_a_joked', 'body': ''})
 
     with app.app_context():
         db = get_db()
-        count = db.execute('SELECT COUNT(id) FROM post').fetchone()[0]
+        count = db.execute('SELECT COUNT(id) FROM joke').fetchone()[0]
         assert count == 2
 
 
 def test_update(client, auth, app):
     auth.login()
-    assert client.get('/1/update').status_code == 200
-    client.post('/1/update', data={'title': 'updated', 'body': ''})
+    assert client.get('/1/update_joke').status_code == 200
+    client.post('/1/update_joke', data={'title': 'updated', 'body': ''})
 
     with app.app_context():
         db = get_db()
-        post = db.execute('SELECT * FROM post WHERE id = 1').fetchone()
+        post = db.execute('SELECT * FROM joke WHERE id = 1').fetchone()
         assert post['title'] == 'updated'
 
 
 @pytest.mark.parametrize('path', (
-    '/create',
-    '/1/update',
+    '/leave_a_joke',
+    '/1/update_joke',
 ))
 def test_create_update_validate(client, auth, path):
     auth.login()
@@ -86,5 +86,5 @@ def test_delete(client, auth, app):
 
     with app.app_context():
         db = get_db()
-        post = db.execute('SELECT * FROM post WHERE id = 1').fetchone()
+        post = db.execute('SELECT * FROM joke WHERE id = 1').fetchone()
         assert post is None

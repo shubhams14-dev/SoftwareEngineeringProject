@@ -1,15 +1,28 @@
 <!doctype html>
-<title>{% block title %}{% endblock %} - Flaskr</title>
+<title>{% block title %}{% endblock %} - Master of Jokes</title>
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 <nav>
-  <h1>Flaskr</h1>
+  {% if g.user %}
+  <h1>Hello {{ g.user['nickname'] }}!</h1>
+  {% else %}
+  <h1>Hello!</h1>
+  {% endif %}
   <ul>
     {% if g.user %}
-      <li><span>{{ g.user['username'] }}</span>
-      <li><a href="{{ url_for('auth.logout') }}">Log Out</a>
+    <li><span>Your joke balance: {{ g.user['joke_balance'] }}</span>
+    {% if route != 'my_jokes' %}
+    <li><a href="{{ url_for('jokes.my_jokes') }}">My Jokes</a>
+    {% endif %}
+    {% if route != 'take_a_joke' %}
+    <li><a href="{{ url_for('jokes.take_a_joke') }}">Take a Joke</a></li>
+    {% endif %}
+    {% if route != 'leave_a_joke' %}
+    <li><a href="{{ url_for('jokes.leave_a_joke') }}">Leave a Joke</a></li>
+    {% endif %}
+    <li><a href="{{ url_for('auth.logout') }}">Log Out</a>
     {% else %}
-      <li><a href="{{ url_for('auth.register') }}">Register</a>
-      <li><a href="{{ url_for('auth.login') }}">Log In</a>
+    <li><a href="{{ url_for('auth.register') }}">Register</a>
+    <li><a href="{{ url_for('auth.login') }}">Log In</a>
     {% endif %}
   </ul>
 </nav>
@@ -18,7 +31,7 @@
     {% block header %}{% endblock %}
   </header>
   {% for message in get_flashed_messages() %}
-    <div class="flash">{{ message }}</div>
+  <div class="flash">{{ message }}</div>
   {% endfor %}
   {% block content %}{% endblock %}
 </section>
