@@ -111,6 +111,7 @@ def view_joke(id):
                     id, g.user['id'],)
             )
             db.commit()
+            return redirect(url_for('jokes.view_joke', id=id))
 
     if request.method == 'POST':
         body = request.form['body']
