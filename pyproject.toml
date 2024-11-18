@@ -1,9 +1,9 @@
 [project]
-name = "flaskr"
+name = "master_of_jokes"
 version = "1.0.0"
-description = "The basic blog app built in the Flask tutorial."
+description = "Master of Jokes"
 dependencies = [
-    "flask",
+    "flask"
 ]
 
 [build-system]
@@ -15,4 +15,4 @@ testpaths = ["tests"]
 
 [tool.coverage.run]
 branch = true
-source = ["flaskr"]
+source = ["master_of_jokes"]

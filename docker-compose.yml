@@ -1,0 +1,8 @@
+services:
+  master_of_jokes:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: master_of_jokes
+    ports:
+      - 3000:3000

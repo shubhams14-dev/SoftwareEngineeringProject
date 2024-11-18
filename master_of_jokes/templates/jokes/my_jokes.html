@@ -12,7 +12,7 @@
     <article class="joke">
       <header>
         <div>
-          <h1><a class="action" href="{{ url_for('jokes.update_joke', id=joke['id']) }}">{{ joke['title'] }}</a></h1>
+          <h1><a class="action" href="{{ url_for('jokes.view_joke', id=joke['id']) }}">{{ joke['title'] }}</a></h1>
           {% if joke['times_rated'] == 0 %}
           <div class="about">Average Rating: 0</div>
           {% else %}
