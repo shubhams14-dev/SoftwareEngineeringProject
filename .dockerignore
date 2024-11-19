@@ -1,0 +1,16 @@
+.venv/
+.git/
+start_app.cmd
+
+*.pyc
+__pycache__/
+
+instance/
+
+.pytest_cache/
+.coverage
+htmlcov/
+
+node_modules/
+build/
+*.egg-info/

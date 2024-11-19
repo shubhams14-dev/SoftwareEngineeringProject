@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<h1>{% block title %}
+  {% if g.user['id'] == joke['author_id'] %}
+  Edit "{{ joke['title'] }}"
+  {% else %}
+  View "{{ joke['title'] }}"
+  {% endif %}
+  {% endblock %}
+</h1>
+{% endblock %}
+
+{% block content %}
+<form method="post">
+  <label for="title">Title</label>
+  <input name="title" id="title" value="{{ request.form['title'] or joke['title'] }}" disabled>
+  <label for="body">Body</label>
+  {% if g.user['id'] == joke['author_id'] %}
+  <textarea name="body" id="body">{{ request.form['body'] or joke['body'] }}</textarea>
+  <div>Created on {{ joke['created']}}</div>
+  {% if joke['times_rated'] == 0 %}
+  <div class="about">Average Rating: 0</div>
+  {% else %}
+  <div class="about">Average Rating: {{ joke['rating'] / joke['times_rated'] }}</div>
+  {% endif %}
+  <input type="submit" value="Save">
+  {% else %}
+  <textarea name="body" id="body" disabled>{{ request.form['body'] or joke['body'] }}</textarea>
+  <div>Created on {{ joke['created']}} by {{ joke['nickname'] }}</div>
+  {% if joke['times_rated'] == 0 %}
+  <div class="about">Average Rating: 0</div>
+  {% else %}
+  <div class="about">Average Rating: {{ joke['rating'] / joke['times_rated'] }}</div>
+  {% endif %}
+  {% endif %}
+</form>
+<hr>
+{% if g.user['id'] == joke['author_id'] %}
+
+<form action="{{ url_for('jokes.delete', id=joke['id']) }}" method="post">
+  <input class="danger" type="submit" value="Delete" onclick="return confirm('Are you sure?');">
+</form>
+{% else %}
+<div>Rate this joke:</div>
+
+<span class="1star"><a href="{{ url_for('jokes.rate_joke', id=joke['id'], rating='1') }}">⭐</a></span>
+<span class="2star"><a href="{{ url_for('jokes.rate_joke', id=joke['id'], rating='2') }}">⭐</a></span>
+<span class="3star"><a href="{{ url_for('jokes.rate_joke', id=joke['id'], rating='3') }}">⭐</a></span>
+<span class="4star"><a href="{{ url_for('jokes.rate_joke', id=joke['id'], rating='4') }}">⭐</a></span>
+<span class="5star"><a href="{{ url_for('jokes.rate_joke', id=joke['id'], rating='5') }}">⭐</a></span>
+{% endif %}
+{% endblock %}

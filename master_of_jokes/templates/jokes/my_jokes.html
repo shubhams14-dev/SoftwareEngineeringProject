@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<h1>{% block title %}My Jokes{% endblock %}</h1>
+{% if g.user %}
+<a class="action" href="{{ url_for('jokes.leave_a_joke') }}">New</a>
+{% endif %}
+{% endblock %}
+
+{% block content %}
+{% for joke in jokes %}
+<article class="joke">
+  <header>
+    <div>
+      <h1><a class="action" href="{{ url_for('jokes.view_joke', id=joke['id']) }}">{{ joke['title'] }}</a></h1>
+      <div class="about">
+        {% if joke['times_rated'] == 0 %}
+        Average Rating: 0
+        {% else %}
+        Average Rating: {{ joke['rating'] / joke['times_rated'] }}
+        {% endif %}
+        {% if joke['author_id'] != g.user['id'] %}
+        Submitted by {{ joke['nickname'] }}
+        {% endif %}
+      </div>
+    </div>
+</article>
+{% if not loop.last %}
+<hr>
+{% endif %}
+{% endfor %}
+{% endblock %}
