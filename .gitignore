@@ -10,6 +10,6 @@ instance/
 htmlcov/
 
 node_modules/
-dist/
+*.whl
 build/
 *.egg-info/
